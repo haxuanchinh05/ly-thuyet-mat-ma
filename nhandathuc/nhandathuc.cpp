@@ -61,27 +61,17 @@ uint8_t nhan_gf2_8(uint8_t da_thuc_1, uint8_t da_thuc_2) {
 }
 
 int main() {
-    //x^3 + x + 1
-    uint8_t a4 = 0b1011; 
-    //x^3 + 1
-    uint8_t b4 = 0b1001; 
+    uint8_t a4 = 0b1011; //x^3 + x + 1
+    uint8_t b4 = 0b1001; //x^3 + 1
     printf("GF(2^4): ");
-    in_nhi_phan(a4, 4);       
-    printf("*");
-    in_nhi_phan(b4, 4);       
-    printf("= ");
+    in_nhi_phan(a4, 4); printf("*"); in_nhi_phan(b4, 4); printf("= ");
     in_nhi_phan(nhan_gf2_4(a4, b4), 4);
     printf("\n");
 
-    //x^5 + x^2 + x
-    uint8_t a8 = 0b00100110; 
-    //x^7 + x^4 + x^3 + x^2 + x
-    uint8_t b8 = 0b10011110; 
-    printf("GF(2^4): ");
-    in_nhi_phan(a8, 8);      
-    printf("*");
-    in_nhi_phan(b8, 8);   
-    printf("= ");
+    uint8_t a8 = 0b00100110; //x^5 + x^2 + x
+    uint8_t b8 = 0b10011110; //x^7 + x^4 + x^3 + x^2 + x
+    printf("GF(2^8): ");
+    in_nhi_phan(a8, 8); printf("*"); in_nhi_phan(b8, 8); printf("= ");
     in_nhi_phan(nhan_gf2_8(a8, b8), 8);
     printf("\n");
     
