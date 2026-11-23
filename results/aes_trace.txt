@@ -1,0 +1,257 @@
+KIEM DINH CHI TIET TRANG THAI AES-128 (MA TRAN STATE 4x4)
+  Plaintext (P)     : 00000000000000000000000000001111
+      [ 00 00 00 00 ]
+      [ 00 00 00 00 ]
+      [ 00 00 00 11 ]
+      [ 00 00 00 11 ]
+  Key (K)           : 00000000000000000000000000000000
+      [ 00 00 00 00 ]
+      [ 00 00 00 00 ]
+      [ 00 00 00 00 ]
+      [ 00 00 00 00 ]
+
+GIAI DOAN 1: MO RONG KHOA (KEY EXPANSION w0..w43)
+  RoundKey[ 0] (w0 ..w3 ): 00000000 00000000 00000000 00000000
+  RoundKey[ 1] (w4 ..w7 ): 62636363 62636363 62636363 62636363
+  RoundKey[ 2] (w8 ..w11): 9B9898C9 F9FBFBAA 9B9898C9 F9FBFBAA
+  RoundKey[ 3] (w12..w15): 90973450 696CCFFA F2F45733 0B0FAC99
+  RoundKey[ 4] (w16..w19): EE06DA7B 876A1581 759E42B2 7E91EE2B
+  RoundKey[ 5] (w20..w23): 7F2E2B88 F8443E09 8DDA7CBB F34B9290
+  RoundKey[ 6] (w24..w27): EC614B85 1425758C 99FF0937 6AB49BA7
+  RoundKey[ 7] (w28..w31): 21751787 3550620B ACAF6B3C C61BF09B
+  RoundKey[ 8] (w32..w35): 0EF90333 3BA96138 97060A04 511DFA9F
+  RoundKey[ 9] (w36..w39): B1D4D8E2 8A7DB9DA 1D7BB3DE 4C664941
+  RoundKey[10] (w40..w43): B4EF5BCB 3E92E211 23E951CF 6F8F188E
+
+GIAI DOAN 2: VONG KHOI TAO (ROUND 0)
+  After AddRoundKey0: 00000000000000000000000000001111
+      [ 00 00 00 00 ]
+      [ 00 00 00 00 ]
+      [ 00 00 00 11 ]
+      [ 00 00 00 11 ]
+
+GIAI DOAN 3: 10 VONG BIEN DOI CHINH
+
+[Vong  1]
+  After SubBytes    : 63636363636363636363636363638282
+      [ 63 63 63 63 ]
+      [ 63 63 63 63 ]
+      [ 63 63 63 82 ]
+      [ 63 63 63 82 ]
+  After ShiftRows   : 63636382636382636363636363636363
+      [ 63 63 63 63 ]
+      [ 63 63 63 63 ]
+      [ 63 82 63 63 ]
+      [ 82 63 63 63 ]
+  After MixColumns  : 82825BBA825BBA826363636363636363
+      [ 82 82 63 63 ]
+      [ 82 5B 63 63 ]
+      [ 5B BA 63 63 ]
+      [ BA 82 63 63 ]
+  After AddRoundKey : E0E138D9E038D9E10100000001000000
+      [ E0 E0 01 01 ]
+      [ E1 38 00 00 ]
+      [ 38 D9 00 00 ]
+      [ D9 E1 00 00 ]
+
+[Vong  2]
+  After SubBytes    : E1F80735E10735F87C6363637C636363
+      [ E1 E1 7C 7C ]
+      [ F8 07 63 63 ]
+      [ 07 35 63 63 ]
+      [ 35 F8 63 63 ]
+  After ShiftRows   : E1076363E16363357C6307F87CF83563
+      [ E1 E1 7C 7C ]
+      [ 07 63 63 F8 ]
+      [ 63 63 07 35 ]
+      [ 63 35 F8 63 ]
+  After MixColumns  : D029859A2AB71B52A24B020BBDAB4B8F
+      [ D0 2A A2 BD ]
+      [ 29 B7 4B AB ]
+      [ 85 1B 02 4B ]
+      [ 9A 52 0B 8F ]
+  After AddRoundKey : 4BB11D53D34CE0F839D39AC24450B025
+      [ 4B D3 39 44 ]
+      [ B1 4C D3 50 ]
+      [ 1D E0 9A B0 ]
+      [ 53 F8 C2 25 ]
+
+[Vong  3]
+  After SubBytes    : B3C8A4ED6629E1411266B8251B53E73F
+      [ B3 66 12 1B ]
+      [ C8 29 66 53 ]
+      [ A4 E1 B8 E7 ]
+      [ ED 41 25 3F ]
+  After ShiftRows   : B329B83F6666E7ED1253A4411BC8E125
+      [ B3 66 12 1B ]
+      [ 29 66 53 C8 ]
+      [ B8 E7 A4 E1 ]
+      [ 3F ED 41 25 ]
+  After MixColumns  : 810DB0216C75F9EA3402D143B18D654E
+      [ 81 6C 34 B1 ]
+      [ 0D 75 02 8D ]
+      [ B0 F9 D1 65 ]
+      [ 21 EA 43 4E ]
+  After AddRoundKey : 119A847105193610C6F68670BA82C9D7
+      [ 11 05 C6 BA ]
+      [ 9A 19 F6 82 ]
+      [ 84 36 86 C9 ]
+      [ 71 10 70 D7 ]
+
+[Vong  4]
+  After SubBytes    : 82B85FA36BD405CAB4424451F413DD0E
+      [ 82 6B B4 F4 ]
+      [ B8 D4 42 13 ]
+      [ 5F 05 44 DD ]
+      [ A3 CA 51 0E ]
+  After ShiftRows   : 82D4440E6B42DDA3B4135FCAF4B80551
+      [ 82 6B B4 F4 ]
+      [ D4 42 13 B8 ]
+      [ 44 DD 5F 05 ]
+      [ 0E A3 CA 51 ]
+  After MixColumns  : 32F3CC116E30767FD3B95C0474C1B518
+      [ 32 6E D3 74 ]
+      [ F3 30 B9 C1 ]
+      [ CC 76 5C B5 ]
+      [ 11 7F 04 18 ]
+  After AddRoundKey : DCF5166AE95A63FEA6271EB60A505B33
+      [ DC E9 A6 0A ]
+      [ F5 5A 27 50 ]
+      [ 16 63 1E 5B ]
+      [ 6A FE B6 33 ]
+
+[Vong  5]
+  After SubBytes    : 86E647021EBEFBBB24CC724E675339C3
+      [ 86 1E 24 67 ]
+      [ E6 BE CC 53 ]
+      [ 47 FB 72 39 ]
+      [ 02 BB 4E C3 ]
+  After ShiftRows   : 86BE72C31ECC3902245347BB67E6FB4E
+      [ 86 1E 24 67 ]
+      [ BE CC 53 E6 ]
+      [ 72 39 47 FB ]
+      [ C3 02 BB 4E ]
+  After MixColumns  : 7FB482C048D4A6D341F02F154AE8BE28
+      [ 7F 48 41 4A ]
+      [ B4 D4 F0 E8 ]
+      [ 82 A6 2F BE ]
+      [ C0 D3 15 28 ]
+  After AddRoundKey : 009AA948B09098DACC2A53AEB9A32CB8
+      [ 00 B0 CC B9 ]
+      [ 9A 90 2A A3 ]
+      [ A9 98 53 2C ]
+      [ 48 DA AE B8 ]
+
+[Vong  6]
+  After SubBytes    : 63B8D352E76046574BE5EDE4560A716C
+      [ 63 E7 4B 56 ]
+      [ B8 60 E5 0A ]
+      [ D3 46 ED 71 ]
+      [ 52 57 E4 6C ]
+  After ShiftRows   : 6360ED6CE7E571524B0AD35756B846E4
+      [ 63 E7 4B 56 ]
+      [ 60 E5 0A B8 ]
+      [ ED 71 D3 46 ]
+      [ 6C 52 57 E4 ]
+  After MixColumns  : E7E376F0C2F716020C6605AADD1355D7
+      [ E7 C2 0C DD ]
+      [ E3 F7 66 13 ]
+      [ 76 16 05 55 ]
+      [ F0 02 AA D7 ]
+  After AddRoundKey : 0B823D75D6D2638E95990C9DB7A7CE70
+      [ 0B D6 95 B7 ]
+      [ 82 D2 99 A7 ]
+      [ 3D 63 0C CE ]
+      [ 75 8E 9D 70 ]
+
+[Vong  7]
+  After SubBytes    : 2B13279DF6B5FB192AEEFE5EA95C8B51
+      [ 2B F6 2A A9 ]
+      [ 13 B5 EE 5C ]
+      [ 27 FB FE 8B ]
+      [ 9D 19 5E 51 ]
+  After ShiftRows   : 2BB5FE51F6EE8B9D2A5C2719A913FB5E
+      [ 2B F6 2A A9 ]
+      [ B5 EE 5C 13 ]
+      [ FE 8B 27 FB ]
+      [ 51 9D 19 5E ]
+  After MixColumns  : 3D128A94C82AA9458EE21337D9C7B5B4
+      [ 3D C8 8E D9 ]
+      [ 12 2A E2 C7 ]
+      [ 8A A9 13 B5 ]
+      [ 94 45 37 B4 ]
+  After AddRoundKey : 1C679D13FD7ACB4E224D780B1FDC452F
+      [ 1C FD 22 1F ]
+      [ 67 7A 4D DC ]
+      [ 9D CB 78 45 ]
+      [ 13 4E 0B 2F ]
+
+[Vong  8]
+  After SubBytes    : 9C855E7D54DA1F2F93E3BC2BC0866E15
+      [ 9C 54 93 C0 ]
+      [ 85 DA E3 86 ]
+      [ 5E 1F BC 6E ]
+      [ 7D 2F 2B 15 ]
+  After ShiftRows   : 9CDABC1554E36E7D93865E2FC0851F2B
+      [ 9C 54 93 C0 ]
+      [ DA E3 86 85 ]
+      [ BC 6E 5E 1F ]
+      [ 15 7D 2F 2B ]
+  After MixColumns  : FFF91AF38546EC8BDD49D8283BDB0697
+      [ FF 85 DD 3B ]
+      [ F9 46 49 DB ]
+      [ 1A EC D8 06 ]
+      [ F3 8B 28 97 ]
+  After AddRoundKey : F10019C0BEEF8DB34A4FD22C6AC6FC08
+      [ F1 BE 4A 6A ]
+      [ 00 EF 4F C6 ]
+      [ 19 8D D2 FC ]
+      [ C0 B3 2C 08 ]
+
+[Vong  9]
+  After SubBytes    : A163D4BAAEDF5D6DD684B57102B4B030
+      [ A1 AE D6 02 ]
+      [ 63 DF 84 B4 ]
+      [ D4 5D B5 B0 ]
+      [ BA 6D 71 30 ]
+  After ShiftRows   : A1DFB530AE84B0BAD6B4D46D02635D71
+      [ A1 AE D6 02 ]
+      [ DF 84 B4 63 ]
+      [ B5 B0 D4 5D ]
+      [ 30 BA 6D 71 ]
+  After MixColumns  : A6F05FF2DACC84B2C9AF66DB8D5248DA
+      [ A6 DA C9 8D ]
+      [ F0 CC AF 52 ]
+      [ 5F 84 66 48 ]
+      [ F2 B2 DB DA ]
+  After AddRoundKey : 1724871050B13D68D4D4D505C134019B
+      [ 17 50 D4 C1 ]
+      [ 24 B1 D4 34 ]
+      [ 87 3D D5 01 ]
+      [ 10 68 05 9B ]
+
+[Vong 10]
+  After SubBytes    : F03617CA53C827454848036B78187C14
+      [ F0 53 48 78 ]
+      [ 36 C8 48 18 ]
+      [ 17 27 03 7C ]
+      [ CA 45 6B 14 ]
+  After ShiftRows   : F0C8031453487CCA481817457836276B
+      [ F0 53 48 78 ]
+      [ C8 48 18 36 ]
+      [ 03 7C 17 27 ]
+      [ 14 CA 45 6B ]
+  After AddRoundKey : 442758DF6DDA9EDB6BF1468A17B93FE5
+      [ 44 6D 6B 17 ]
+      [ 27 DA F1 B9 ]
+      [ 58 9E 46 3F ]
+      [ DF DB 8A E5 ]
+
+GIAI DOAN 4: KET QUA BAN MA CUOI CUNG
+  Ciphertext (C)    : 442758DF6DDA9EDB6BF1468A17B93FE5
+      [ 44 6D 6B 17 ]
+      [ 27 DA F1 B9 ]
+      [ 58 9E 46 3F ]
+      [ DF DB 8A E5 ]
+
+[KIEM DINH AES-128] Expected: 442758DF6DDA9EDB6BF1468A17B93FE5 | Actual: 442758DF6DDA9EDB6BF1468A17B93FE5 -> PASS
